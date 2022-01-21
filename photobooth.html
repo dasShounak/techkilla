@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
+        <script type="text/javascript" src="https://unpkg.com/webcam-easy/dist/webcam-easy.min.js"></script>
+        <script src="https://kit.fontawesome.com/0a41cee954.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/build.css">
+        <title>PhotoBooth | TechKilla</title>
+    </head>
+    <body class="h-screen w-full flex flex-col justify-center items-center bg-slate-100">
+        <!-- LOGO -->
+        <div class="fixed top-0 left-1/2 transform -translate-x-1/2 mt-10">
+            <img src="img/TK-LOGO_TransBG-1.png" alt="TechKilla" class="h-10 w-auto">
+            <h1 class="text-2xl font-heading text-center ml-9 -mt-3 text-slate-400">PhotoBooth</h1>
+        </div>
+
+        <!-- CONTAINER -->
+        <div id="container" class="px-8 mt-10 flex flex-col justify-center items-center">
+            <div id="thank-you" class="hidden flex-col items-center justify-center space-y-4">
+                <h1 class="text-3xl md:text-5xl text-slate-500 font-heading">Thank You!</h1>
+                <a href="index.html" class="text-lg md:text-xl text-blue-500 hover:underline">Log Out <i class="fas fa-sign-out-alt"></i></a>
+            </div>
+            <video id="webcam" autoplay playsinline class="hidden rounded-xl"></video>
+            <canvas id="canvas" class="hidden rounded-xl"></canvas>
+            <div id="buttons" class="mt-10 space-x-4">
+                <!-- START BUTTON -->
+                <button id="start" title="Start camera" class="text-3xl md:text-4xl font-heading font-semibold tracking-wider bg-yellow-500 text-white px-4 py-3 rounded-md shadow-lg shadow-yellow-200 transition hover:bg-yellow-400 active:shadow-none transform active:scale-95">Start</button>
+                <!-- CAPTURE BUTTON -->
+                <button id="capture" title="Capture" class="hidden text-xl bg-blue-500 text-white p-5 rounded-full shadow-lg shadow-blue-200 transition hover:bg-blue-400 active:shadow-none transform active:scale-95"><i class="fas fa-camera fa-xl"></i></button>
+                <!-- DOWNLOAD BUTTON -->
+                <a download id="download" title="Download" class="hidden text-xl bg-emerald-500 text-white px-3 py-2 rounded-md shadow-lg shadow-emerald-200 transition hover:bg-emerald-400 active:shadow-none transform active:scale-95"><i class="fas fa-download"></i> Download</a>
+                <!-- RETAKE BUTTON -->
+                <button id="retake" title="Retake" class="hidden text-xl bg-slate-300 text-slate-500 px-3 py-2 rounded-md shadow-lg shadow-slate-300 transition hover:bg-slate-400 active:shadow-none transform active:scale-95"><i class="fas fa-redo-alt"></i> Retake</button>
+                <!-- STOP BUTTON -->
+                <button id="stop" title="Close camera" class="hidden text-xl bg-red-500 text-white px-[26px] py-5 rounded-full shadow-lg shadow-red-200 transition hover:bg-red-400 active:shadow-none transform active:scale-95"><i class="fas fa-times fa-xl"></i></button>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
