@@ -18,10 +18,13 @@
         </div>
         <!-- FORM -->
         <form method="get" action="./photobooth.html" class="bg-slate-100 shadow-xl rounded-xl border-2 border-slate-200 px-4 py-6 text-slate-500">
+            <!-- NAME -->
             <label for="name">Name</label><br />
             <input type="text" name="name" id="name" placeholder="John Doe" required /><br />
+            <!-- EMAIL -->
             <label for="email">Email</label><br />
             <input type="email" id="email" placeholder="you@company.com" required /><br />
+            <!-- STATE -->
             <label for="state">State</label><br />
             <select name="state" id="state" required>
                 <option value="" selected disabled hidden>Choose your state</option>
@@ -62,6 +65,7 @@
                 <option value="Uttarakhand">Uttarakhand</option>
                 <option value="West Bengal">West Bengal</option></select
             ><br />
+            <!-- SUBMIT -->
             <input type="submit" name="submit" id="submit" value="Submit" class="bg-blue-500 text-white px-3 py-2 rounded-md transition hover:bg-blue-400 cursor-pointer w-full mt-4" />
         </form>
     </body>
