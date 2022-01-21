@@ -1,3 +1,8 @@
+///////////////////////////////////////////////////
+// Author: Shounak Das
+// GitHub: https://github.com/dasShounak
+//////////////////////////////////////////////////.
+
 const webcamFrame = document.getElementById("webcam");
 const canvasFrame = document.getElementById("canvas");
 const startButton = document.getElementById("start");
