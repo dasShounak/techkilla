@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="css/build.css" />
         <title>PhotoBooth | TechKilla</title>
     </head>
-    <body class="h-screen w-full flex flex-col justify-center items-center bg-slate-100">
+    <body class="h-screen w-full flex flex-col justify-center items-center bg-slate-100 overflow-hidden">
         <!-- LOGO -->
         <div class="fixed top-0 left-1/2 transform -translate-x-1/2 mt-10">
             <img src="img/TK-LOGO_TransBG-1.png" alt="TechKilla" class="h-10 w-auto" />
@@ -35,13 +35,13 @@
             <!-- FRAMES -->
             <div id="frames" class="hidden flex-col items-center space-y-4 mt-4">
                 <h1 class="text-lg font-heading uppercase tracking-wide">Select a Frame</h1>
-                <ul class="flex justify-between space-x-2">
-                    <li id="frame__white" class="cursor-pointer px-4 py-2 bg-slate-300 text-slate-600 rounded-full transition transform hover:-translate-y-1 hover:rotate-2 hover:bg-white border-2 border-slate-300">white</li>
-                    <li id="frame__black" class="cursor-pointer px-4 py-2 bg-slate-300 text-slate-600 rounded-full transition transform hover:-translate-y-1 hover:-rotate-2 hover:bg-black border-2 hover:text-white border-slate-300">black</li>
-                    <li id="frame__red" class="cursor-pointer px-4 py-2 bg-slate-300 text-slate-600 rounded-full transition transform hover:-translate-y-1 hover:rotate-2 hover:bg-red-400 hover:text-white border-2 border-slate-300">red</li>
-                    <li id="frame__blue" class="cursor-pointer px-4 py-2 bg-slate-300 text-slate-600 rounded-full transition transform hover:-translate-y-1 hover:-rotate-2 hover:bg-blue-400 hover:text-white border-2 border-slate-300">blue</li>
-                    <li id="frame__yellow" class="cursor-pointer px-4 py-2 bg-slate-300 text-slate-600 rounded-full transition transform hover:-translate-y-1 hover:rotate-2 hover:bg-yellow-200 border-2 border-slate-300">yellow</li>
-                    <li id="frame__green" class="cursor-pointer px-4 py-2 bg-slate-300 text-slate-600 rounded-full transition transform hover:-translate-y-1 hover:-rotate-2 hover:bg-green-300 border-2 border-slate-300">green</li>
+                <ul class="flex flex-wrap itec justify-center space-x-2">
+                    <li id="frame__white" class="cursor-pointer select-none px-4 py-2 m-2 bg-slate-300 text-slate-600 rounded-full transition transform hover:-translate-y-1 hover:rotate-2 hover:bg-white border-2 border-slate-300">white</li>
+                    <li id="frame__black" class="cursor-pointer select-none px-4 py-2 m-2 bg-slate-300 text-slate-600 rounded-full transition transform hover:-translate-y-1 hover:-rotate-2 hover:bg-black border-2 hover:text-white border-slate-300">black</li>
+                    <li id="frame__red" class="cursor-pointer select-none px-4 py-2 m-2 bg-slate-300 text-slate-600 rounded-full transition transform hover:-translate-y-1 hover:rotate-2 hover:bg-red-400 hover:text-white border-2 border-slate-300">red</li>
+                    <li id="frame__blue" class="cursor-pointer select-none px-4 py-2 m-2 bg-slate-300 text-slate-600 rounded-full transition transform hover:-translate-y-1 hover:-rotate-2 hover:bg-blue-400 hover:text-white border-2 border-slate-300">blue</li>
+                    <li id="frame__yellow" class="cursor-pointer select-none px-4 py-2 m-2 bg-slate-300 text-slate-600 rounded-full transition transform hover:-translate-y-1 hover:rotate-2 hover:bg-yellow-200 border-2 border-slate-300">yellow</li>
+                    <li id="frame__green" class="cursor-pointer select-none px-4 py-2 m-2 bg-slate-300 text-slate-600 rounded-full transition transform hover:-translate-y-1 hover:-rotate-2 hover:bg-green-300 border-2 border-slate-300">green</li>
                 </ul>
                 <button id="frame-next" class="text-xl bg-blue-500 text-white px-3 py-2 rounded-md shadow-lg shadow-blue-200 transition hover:bg-blue-400 active:shadow-none transform active:scale-95">Next</button>
             </div>
