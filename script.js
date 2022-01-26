@@ -119,7 +119,7 @@ frameRed.addEventListener("click", () => {
 });
 
 frameBlue.addEventListener("click", () => {
-    ctx.strokeStyle = "#5C6BC0";
+    ctx.strokeStyle = "#42a5f5";
     ctx.lineWidth = "40";
     ctx.strokeRect(0, 0, canvasFrame.width, canvasFrame.height);
 });
